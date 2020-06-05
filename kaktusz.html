@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaktuszok</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.4.1.min.js"></script> 
+  
+  <link rel="stylesheet" href="css/index.css">
+  <meta name="description" content="">
+  
+</head>
+
+<body>
+  <div>    
+   
+    <div id="panel2" class="panel">
+      
+      <img class="iconclose rightx" src="kepek/close-icon.png" alt="">
+      <nav class="nav2 middle2">    
+      
+        <ul class="mobilmenu">       
+          <li><a class="logo" href="index.html">Képeim</a></li>
+          <li> <a href="index.html">Főoldal</a>   </li> 
+          <li id="gall"><a href="index.html#gallery">Képgaléria</a></li>
+          <li id="cont"><a href="index.html#contact">Kapcsolat</a></li>
+        </ul> 
+      </nav> 
+    </div>
+    <div id="panel1" class="activepanel">
+  
+      <nav>
+   
+        <ul class="nagymenu">
+          <li><a class="logo left" href="index.html">Képeim</a><img id="menu" class="iconhamb rightm" src="kepek/hamburger-icon.png" alt="">
+          </li>
+          <li id="cont" class="right"><a class="hidden1" href="index.html#contact">Kapcsolat</a></li>
+          <li id="gall" class="right"><a class="hidden1" href="index.html#gallery">Képgaléria</a></li>
+          <li class="right"> <a class="hidden1" href="index.html">Főoldal</a>   </li> 
+        </ul> 
+    
+      </nav>
+    </div>
+    
+  </div>    
+  <div class="section">
+  <div class="szoveg">
+    <h1 class="szoveg">Kaktuszok</h1>   
+    
+    <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla erat et nisl feugiat aliquam. Sed semper leo purus, sed tempus mi iaculis sit amet. Phasellus vel urna aliquam, porttitor augue id, interdum ipsum. In nec ultricies dolor. Nunc lacinia quam sit amet ipsum consectetur porttitor. Nam vitae enim ex. Fusce fringilla dapibus quam. Ut semper auctor finibus. Proin tempor consequat enim, et ultricies libero facilisis et. Duis lobortis, dui in scelerisque auctor, felis justo accumsan enim, quis mollis magna elit eget nisi. Quisque quis pharetra lorem, eget sagittis lorem. In hac habitasse platea dictumst. Nunc ornare dui hendrerit nunc efficitur, finibus accumsan turpis dapibus. Donec ut maximus lorem, feugiat accumsan sapien. Praesent quis arcu congue, vehicula ex non, porttitor ipsum. </p>
+    
+  </div>
+  <div class="gray">
+    <div class="text-center">
+      <figure>
+        <img class="icons" src="kepek/3dsmax-20172.png" alt="">
+        <figcaption>3ds max</figcaption>
+      </figure> 
+      <figure>
+        <img class="icons" src="kepek/Substance_Painter_Icon.png" alt="">
+        <figcaption>Substance Painter</figcaption>
+      </figure>
+      <figure>
+        <img class="icons" src="kepek/photoshop.png" alt="">
+        <figcaption>Photoshop</figcaption>
+     </figure>
+   </div> 
+ </div>
+  
+   
+ <a id="page-prev" class="carousel-control-prev" href="orgona.html">
+ <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+ </a>
+ 
+ <a id="page-next" class="carousel-control-next" href="orchidea.html">
+ <span class="carousel-control-next-icon" aria-hidden="true"></span></a>
+ 
+ <div class="">
+  <div class="">
+    <img class="nagykep" src="kepek/kaktusz1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img class="box" src="kepek/kaktusz1.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img class="box" src="kepek/kaktusz1.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img class="box" src="kepek/kaktusz1.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img class="box" src="kepek/kaktusz1.jpg">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+  </div>
+  <footer class="text-center">
+    <p class="footerkozep">Képeim</p>
+    <ul class="social-network social-circle footerul">          
+      <li class="footerli"><a href="facebook.com" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+      <li class="footerli"><a href="twitter.com" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>          
+      <li class="footerli"><a href="linkedin.com" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    <p class="footerkis">2020</p>
+  </footer>   
+      
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+  document.getElementById("page-prev").style.display = "none";
+  document.getElementById("page-next").style.display = "none";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+  document.getElementById("page-prev").style.display = "flex";
+  document.getElementById("page-next").style.display = "flex";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script>
+  $(document).ready(function(){
+    $('#menu').on('click',function(){
+    $('#panel2').slideDown(1000);            
+        });
+    });
+
+    $('.rightx').on('click',function(){
+    $('#panel2').slideUp(1000);          
+      });
+  </script>
+</body>
+</html>
+
+
+
+
+
+ 
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,703 @@
+/* ============
+
+GENERAL STYLES
+
+=============*/
+body {
+  background-color: #310909;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'NotoSerif';
+}
+
+.section {
+  background-color: rgb(134, 69, 69);
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NotoSerif;
+  src: url('../font/NotoSerif-Regular.ttf');
+}
+
+
+
+/*=========
+
+NAVIGATION
+
+==========*/
+nav {
+  background-color: rgb(57, 0, 0);  
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 5rem;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nagymenu {
+  margin-right: 0rem;
+}
+
+nav li {
+  margin: 1.8rem;
+  padding: 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 0.3rem;
+  font-family: 'NotoSerif';
+  text-align: center;
+  margin: 0;
+  padding: 0rem 2.4rem;
+}
+
+a:hover,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: white;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.iconhamb {
+  width: 2rem;
+  height: 2rem;
+  margin: -5rem;
+  padding: 0;
+}
+
+.iconclose {
+  width: 5rem;
+  height: 5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden1 {
+  display: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.left::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.right::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.rightm {
+  float: right;
+  margin: 2.2rem 1rem;
+}
+
+.rightm::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 6.5rem;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+  }
+  
+
+  .nagymenu {
+    margin-right: 3rem;
+  }
+
+
+  nav li {
+    margin: 1.2rem 2rem 1rem 0;
+    padding: 0;
+  }
+
+  .logo {
+    margin: 1.6rem 0 0 7rem;
+  }
+
+  .hidden1 {
+    display: inline-block;
+  }
+
+  .rightm {
+    display: none;
+  }
+
+  nav li a {
+    font-size: 1rem;
+    padding-right: 0.2rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width:992px) {
+
+  nav {
+    height: 6.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nagymenu {
+    margin-right: 9.5rem;
+  }
+
+
+  nav li {
+    margin: 1.2rem 2rem 1rem 0;
+    padding: 0;
+  }
+
+  .logo {
+    margin: 1.4rem 0 0 11rem;
+  }
+
+  .hidden1 {
+    display: inline-block;
+  }
+
+  .rightm {
+    display: none;
+  }
+
+  nav li a {
+    font-size: 1rem;
+    padding-right: 0.2rem;
+    margin: 0;
+  }
+}
+
+/*=====
+
+MENU
+
+=======*/
+
+.panel {
+  display: none;
+}
+
+.activepanel {
+  display: block;
+}
+
+#panel2,
+.nav2 {
+  background-color: rgb(57, 0, 0);
+}
+
+.nav2 a,
+.nav2 a:hover,
+.nav2 a:visited {
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1rem auto;
+  font-family: 'NotoSerif';
+  vertical-align: top;
+}
+
+.rightx {
+  float: right;
+  margin-right: 2rem;
+  margin-top: 0rem;
+}
+
+.rightx::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+#panel2 {
+  background-color: rgb(57, 0, 0);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 3000;
+}
+
+.middle2 {
+  margin-top: 8rem;
+}
+
+.right::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+
+
+
+/*======
+
+SECTION
+
+======*/
+.picture {
+  width: 80%;
+  height: auto;
+  margin: 0rem 10% 0rem 10%;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  margin: 0rem;
+  padding: 0rem;
+  text-align: center;
+  font-family: 'NotoSerif';
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.kozepes {
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.small {
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+  width: 70%;
+  margin: 0rem auto;
+}
+
+.szoveg {
+  padding: 5rem 0;
+}
+
+/*Projects*/
+
+.projects-center {
+  max-width: 100vw;
+  margin: 2rem auto;
+}
+
+.projects-single {
+  margin: 0.25rem auto;
+}
+
+.projects-single-img {
+  display: block;
+  width: 100%;
+}
+
+.projects-center-comm {
+  max-width: 100vw;
+  margin: 2rem auto;
+}
+
+.projects-single-comm {
+  margin: 0.25rem auto;
+}
+
+.projects-single-img-comm {
+  display: block;
+  width: 100%;
+}
+
+
+@media screen and (min-width:768px) {
+
+  .projects-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .projects-single {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+
+  .projects-center-comm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .projects-single-comm {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+}
+
+@media screen and (min-width:992px) {
+
+  .projects-single {
+    flex: 0 0 calc(25% - 0.5rem);
+  }
+
+  .projects-single-comm {
+    flex: 0 0 calc(20% - 0.5rem);
+  }
+}
+
+
+.vehicles {
+  color: #afafaf;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.tipus {
+  color: #ffffff;
+  font-family: Brandon black;
+  font-size: 1.4rem;
+}
+
+.projects-single {
+  position: relative;
+}
+
+.projects-single-comm {
+  position: relative;
+}
+
+.texted {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 10rem;
+}
+
+/*.texted-comm { 
+  position:absolute;
+  width:100%;
+  height:100%;
+  left: 0;
+  top:0;   
+  padding-top: 10rem;
+  }*/
+
+.hidden {
+  display: none;
+}
+
+.opac {
+  opacity: 0.5;
+}
+
+.mapbig {
+  margin: 3rem;
+  display: none;
+}
+
+
+
+#contact,
+.gray {
+  background-color: rgb(57, 0, 0);
+}
+
+.getintouch {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 3.5rem 0;
+}
+
+.perpro {
+  background-color: rgb(57, 0, 0);
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'NotoSerif';
+}
+
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5.3rem;
+    z-index: 2;
+  }
+
+  .small {
+    width: 50%;
+    margin: 0rem auto;
+  }
+
+  .mapmobil {
+    display: none;
+  }
+
+  .mapbig {
+    display: block;
+
+  }
+
+}
+
+
+
+/*=========
+
+FOOTER
+
+==========*/
+
+footer {
+  background-color: #310909;
+}
+
+.footerkozep {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.footerkis {
+  font-size: 1rem;
+  margin: 2rem auto;
+}
+
+.footerul {
+  list-style-type: none;
+}
+
+.footerli {
+  display: inline;
+  margin-right: 2rem;
+  margin-left: -1rem;
+}
+
+i {
+  color: white;
+}
+
+
+
+/*=========
+
+Aloldalak
+
+==========*/
+
+#page-prev {
+  position: fixed;
+  top: 10vh;
+  text-align: center;
+  z-index: 2;
+
+}
+
+#page-next {
+  position: fixed;
+  top: 10vh;
+  text-align: center;
+  z-index: 2;
+
+}
+
+figure {
+  display: inline-block;
+}
+
+figcaption {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.icons {
+  margin: 0.5rem 1rem;
+  padding-bottom: 0;
+  width: 3.2rem;
+}
+
+.gray {
+  margin: 1rem auto;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+
+  figcaption {
+    font-size: 0.9rem;
+  }
+
+  .icons {
+    margin: 1rem 3rem 0.3rem 3rem;
+  }
+
+  .gray {
+    margin: 1rem auto;
+    width: 52%;
+  }
+
+}
+
+/* Galeria */
+
+.nagykep {
+  width: 50%;
+  height: auto;
+  margin: 1rem 25% 1rem 25%;
+  cursor: pointer;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  padding-top: 150px;
+  ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgb(41, 41, 41);
+  margin: auto;
+  padding: 0;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgb(52, 52, 52);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
